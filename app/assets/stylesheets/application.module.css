@@ -1,0 +1,61 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+#main-form {
+    display: flex;
+    margin: auto;
+    width: 50%;
+    flex-direction: column;
+    height: 40vh;
+    justify-content: space-around;
+}
+
+#referral-form {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    height: 30vh;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+#main-form>div {
+    width: 50%;
+    margin: auto;
+}
+
+#main-form>div>.MuiFormControl-root {
+    width: 100%;
+}
+
+#action-button {
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width: 576px) {
+
+    #main-form {
+        width: 90%;
+    }
+
+    #main-form>div {
+        width: 100%;
+    }
+
+}

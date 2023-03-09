@@ -1,0 +1,32 @@
+<%= form_with(model: api_v1_referral) do |form| %>
+  <% if api_v1_referral.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(api_v1_referral.errors.count, "error") %> prohibited this api_v1_referral from being saved:</h2>
+
+      <ul>
+        <% api_v1_referral.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :toEmail, style: "display: block" %>
+    <%= form.text_field :toEmail %>
+  </div>
+
+  <div>
+    <%= form.label :fromEmail, style: "display: block" %>
+    <%= form.text_field :fromEmail %>
+  </div>
+
+  <div>
+    <%= form.label :referralLink, style: "display: block" %>
+    <%= form.text_field :referralLink %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

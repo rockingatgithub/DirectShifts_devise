@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Referrals</h1>
+
+<div id="api_v1_referrals">
+  <% @api_v1_referrals.each do |api_v1_referral| %>
+    <%= render api_v1_referral %>
+    <p>
+      <%= link_to "Show this referral", api_v1_referral %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New referral", new_api_v1_referral_path %>
