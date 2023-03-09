@@ -57,3 +57,7 @@ This README contains prerequisites for running the application, steps for instal
 - Enter the password for this new referred user.
 - With this we have successfully created a referral link and signup a new user. 
 
+### APIs
+- The APIs can be tested separately using testing tools like (Postman).
+- We can test both users and referrals APIs
+- The API documentation [Link](https://documenter.getpostman.com/view/11577542/2s93Jruivb).
