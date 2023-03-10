@@ -2,9 +2,8 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FormControl, Button, FormHelperText, Input, InputLabel } from '@mui/material';
 import { toast, ToastContainer } from 'react-toastify';
-// import '../../assets/stylesheets/application.module.css'
 
-
+// The signup component, to register a new user.
 
 const Signup = (props) => {
 

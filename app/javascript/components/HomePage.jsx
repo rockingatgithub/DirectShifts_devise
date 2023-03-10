@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FormControl, Button, FormHelperText, Input, InputLabel } from '@mui/material';
 import { ToastContainer, toast } from 'react-toastify';
 
+// The login page component.
 
 const HomePage = (props) => {
 
@@ -21,6 +22,7 @@ const HomePage = (props) => {
             }
         }
 
+        // function to signup a new user
         const signinResponse = await fetch('/users/sign_in', {
             method: 'POST',
             body: JSON.stringify(userObj),

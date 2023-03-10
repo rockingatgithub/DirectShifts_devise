@@ -5,6 +5,8 @@ import { v4 as uuidv4 } from 'uuid';
 import { Box } from '@mui/system';
 import { ToastContainer, toast } from 'react-toastify';
 
+// The create referral form component to create a new referral
+
 function ReferralForm(props) {
 
     const [toEmail, setToEmail] = useState('')

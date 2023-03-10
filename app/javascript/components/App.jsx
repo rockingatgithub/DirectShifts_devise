@@ -7,6 +7,7 @@ import RefrralSignup from './ReferralSignup';
 import Signup from './Signup';
 import '../../assets/stylesheets/application.module.css';
 
+// The main app component from where the application starts. It also contains routes for pages available.
 
 function App(props) {
 

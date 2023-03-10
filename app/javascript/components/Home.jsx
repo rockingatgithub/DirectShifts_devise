@@ -15,6 +15,8 @@ const linkStyle = {
     textDecoration: 'none',
 }
 
+// The referrals list contains the list of referrals created by the user.
+
 function ReferralList(props) {
 
     useEffect(() => {

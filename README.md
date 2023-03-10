@@ -21,6 +21,14 @@ This README contains prerequisites for running the application, steps for instal
 ```bash
     rake secret
 ```
+
+## Note:-
+- While connect to database the socket field is different for Mac OS and Ubuntu. The project has been tested on both ubuntu and MacOS machine.
+- Below are the scoket values for both Mac OS and Ubuntu.
+* Mac - /tmp/mysql.sock
+* Ubuntu - /var/run/mysqld/mysqld.sock
+- we may need to update this if socket related error comes up.
+
 ## Steps for installation
 
 - Clone repository or download zipped folder from [Link](https://github.com/rockingatgithub/DirectShifts_devise).
@@ -43,6 +51,7 @@ This README contains prerequisites for running the application, steps for instal
 
 ### Pages of the application
 
+- React components are stored in ``` app/javascript ``` folder.
 - Signin page :- Contains the Signin form.
 - Signup page:- Contains the Signup form.
 - Home page:- Shows the list of referrals created by the user along with the referral link.

@@ -4,6 +4,8 @@ import { Input, InputLabel, FormHelperText, Button } from '@mui/material';
 import { useParams, useNavigate } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 
+// The signup page with the referred email address.
+
 function RefrralSignup(props) {
 
     const { referralID } = useParams();

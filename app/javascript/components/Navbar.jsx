@@ -26,6 +26,8 @@ const linkStyle = {
   textDecoration: 'none',
 }
 
+// The navbar component, this contains all the navigation links.
+
 export default function DrawerAppBar(props) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const [modalOpen, setModalToggle] = React.useState(false)
